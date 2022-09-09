@@ -1,4 +1,4 @@
-//delete zip -g
+//master
 const https = require('https');
 
 module.exports = async function fetch(method, url, body) {

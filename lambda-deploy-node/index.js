@@ -1,4 +1,4 @@
-//delete zip -g
+//master
 const fetch = require('./fetch.js');
 
 const APIStrategy = {
