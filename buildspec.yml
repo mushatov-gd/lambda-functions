@@ -3,7 +3,6 @@ version: 0.2
 phases:
   build:
     commands:
-      - pwd
       - cd lambda-deploy
       - zip -r9 deployment_package.zip .
       - aws lambda update-function-code --function-name lambda-deploy --zip-file fileb://deployment_package.zip
