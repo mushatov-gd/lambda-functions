@@ -6,4 +6,4 @@ phases:
       - cd lambda-deploy-node
       - zip -r9 deployment_package.zip .
       - aws lambda update-function-code --function-name lambda-deploy-node --zip-file fileb://deployment_package.zip
-      - echo "Dev 33"
+      - echo "Dev 4"
