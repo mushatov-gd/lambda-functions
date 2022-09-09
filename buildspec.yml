@@ -1,13 +1,13 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      python: 3.9
+  # install:
+  #   runtime-versions:
+  #     python: 3.9
   build:
     commands:
       - zip -r9 deployment_package.zip .
       - zip -g deployment_package.zip lambda_function.py
-  post_build:
-    commands:
+  # post_build:
+  #   commands:
       - aws lambda update-function-code --function-name lambda-deploy --zip-file fileb://deployment_package.zip
