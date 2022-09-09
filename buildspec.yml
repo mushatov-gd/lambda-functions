@@ -7,3 +7,7 @@ phases:
       - zip -r9 deployment_package.zip .
       - zip -g deployment_package.zip lambda_function.py
       - aws lambda update-function-code --function-name lambda-deploy --zip-file fileb://deployment_package.zip
+      - cd ../lambda-deploy-node
+      - zip -r9 deployment_package.zip .
+      - zip -g deployment_package.zip index.js
+      - aws lambda update-function-code --function-name lambda-deploy-node --zip-file fileb://deployment_package.zip
