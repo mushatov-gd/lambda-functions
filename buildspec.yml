@@ -6,6 +6,7 @@ phases:
   #     python: 3.9
   build:
     commands:
+      - cd /lambda-deploy
       - zip -r9 deployment_package.zip .
       - zip -g deployment_package.zip lambda_function.py
   # post_build:
