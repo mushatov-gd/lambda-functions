@@ -4,5 +4,5 @@ def lambda_handler(event, context):
 
     return {
         'statusCode': 200,
-        'body': json.dumps('master 2')
+        'body': json.dumps('master 3')
     }

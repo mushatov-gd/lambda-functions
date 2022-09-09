@@ -1,4 +1,4 @@
-//master 2
+//master 3
 const fetch = require('./fetch.js');
 
 const APIStrategy = {
