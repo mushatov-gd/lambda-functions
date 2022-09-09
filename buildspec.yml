@@ -3,6 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
+      - pwd
       - cd lambda-deploy
       - zip -r9 deployment_package.zip .
       # - zip -g deployment_package.zip lambda_function.py
